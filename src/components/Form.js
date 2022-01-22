@@ -106,15 +106,6 @@ export default function Form() {
 			}}
 		>
 			<div style={{ textAlign: '-webkit-center' }}>
-				<img
-					src={Eden}
-					style={{
-						width: '140px',
-						position: 'absolute',
-						right: '733px',
-						top: '97px',
-					}}
-				/>
 				<Typography
 					variant='h2'
 					style={{
