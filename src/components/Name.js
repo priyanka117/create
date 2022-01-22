@@ -44,7 +44,6 @@ export default function Name({ state, updateData }) {
 				style={{
 					display: 'flex',
 					flexDirection: 'column',
-					alignItems: 'center',
 					marginTop: '30px',
 					gap: '15px',
 				}}
@@ -56,6 +55,7 @@ export default function Name({ state, updateData }) {
 						fontSize: '0.8rem',
 						fontWeight: '600',
 						color: '#a3a3a3',
+						height: ''
 					}}
 				>
 					Full Name
@@ -74,7 +74,7 @@ export default function Name({ state, updateData }) {
 				<Typography
 					variant='h5'
 					style={{
-						marginLeft: '-260px',
+						textAlign : 'left',
 						fontSize: '0.8rem',
 						fontWeight: '600',
 						color: '#a3a3a3',

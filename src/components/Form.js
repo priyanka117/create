@@ -8,8 +8,10 @@ import Success from './Success'
 import Name from './Name'
 import Setup from './Setup'
 import WorkSpace from './WorkSpace'
-import './Form.css'
 import Eden from '../Eden.png'
+import SuccessIcon from '../Eden.png'
+// import LStep from './Stepper/LStep'
+// import LSTepper from './Stepper/LSTepper'
 
 const steps = [0, 1, 2, 3]
 
@@ -100,32 +102,34 @@ export default function Form() {
 	return (
 		<div
 			style={{
-				margin: '83px 60px',
+				margin: '8vh 8vw',
 				height: '-webkit-fill-available',
 				backgroundColor: 'white',
+				display: 'grid',
+				placeItems: 'center',
+				gap: '35px'
 			}}
 		>
-			<div style={{ textAlign: '-webkit-center' }}>
-				<Typography
+			<div style={{ display: 'grid', placeItems: 'center', gap: '25px' }}>
+				<div style={{display : 'flex', gap: '10px', marginLeft: '-40px'}}>
+					<img src={SuccessIcon} width={'185vw'} height={'105vw'}/>
+					<Typography
 					variant='h2'
 					style={{
 						fontSize: '1.5rem',
 						fontWeight: 'bold',
-						position: 'fixed',
-						left: '730px',
-						top: '114px',
+						margin : '38px 0 0 -100px'
 					}}
 				>
 					Eden
 				</Typography>
+				</div>
+				{/* <LSTepper completedSteps={completedSteps} /> */}
 				<Stepper
 					nonLinear
 					activeStep={activeStep}
 					style={{
-						width: '300px',
-						position: 'absolute',
-						top: '182px',
-						left: '614px',
+						width: '300px'
 					}}
 				>
 					{steps.map((label, index) => (
@@ -139,9 +143,11 @@ export default function Form() {
 				</Stepper>
 				<div
 					style={{
-						position: 'absolute',
-						top: '250px',
-						left: '590px',
+						display: 'flex',
+						flexDirection : 'column',
+						justifyContent: 'center',
+						alignItems: 'center',
+						gap: '25px'
 					}}
 				>
 					{(() => {
@@ -177,12 +183,8 @@ export default function Form() {
 						<Button
 							onClick={handleNext}
 							style={{
-								width: '350px',
-								height: '40px',
 								backgroundColor: '#664de5',
-								marginTop: '35px',
-								position: 'fixed',
-								left: '592px',
+								width: '10vw'
 							}}
 						>
 							<Typography

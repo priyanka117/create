@@ -9,8 +9,6 @@ export default function Setup({ state, updateData }) {
 		welcomeMessage: {
 			fontSize: '1.5rem',
 			fontWeight: 'bold',
-			position: 'relative',
-			left: '75px',
 		},
 		message: {
 			fontSize: '0.8rem',
@@ -94,15 +92,13 @@ export default function Setup({ state, updateData }) {
 	}
 
 	return (
-		<div style={{ position: 'relative', right: '167px' }}>
+		<div style={{display: 'flex', flexDirection : 'column', gap: '25px'}}>
 			<Typography variant='h2' style={styles.welcomeMessage}>
 				How are you planning to use Eden?
 			</Typography>
 			<Typography
 				variant='h6'
 				style={{
-					position: 'relative',
-					left: '75px',
 					fontSize: '0.8rem',
 					fontWeight: '600',
 					color: '#a3a3a3',
@@ -112,8 +108,7 @@ export default function Setup({ state, updateData }) {
 			</Typography>
 			<div
 				style={{
-					marginTop: '75px',
-					marginLeft: '160px',
+					justifyContent: 'center',
 					display: 'flex',
 					gap: '30px',
 				}}

@@ -15,8 +15,6 @@ export default function Success({state}) {
 			marginTop: '80px',
 		},
 		message: {
-			position: 'relative',
-			left: '10px',
 			fontSize: '0.8rem',
 			fontWeight: '600',
 			color: '#a3a3a3',
@@ -25,7 +23,7 @@ export default function Success({state}) {
 	}
 
 	return (
-		<div style={{ position: 'relative', right: '22px' }}>
+		<div >
 			<div style={styles.successIcon}></div>
 			<img
                 src={SuccessIcon}
@@ -47,10 +45,8 @@ export default function Success({state}) {
 				style={{
 					width: '350px',
 					height: '40px',
-					backgroundColor: '#664de5',
-					marginTop: '35px',
-					position: 'fixed',
-					left: '592px',
+					backgroundColor: '#664de5'
+					, marginTop : '25px'
 				}}
 			>
 				<Typography

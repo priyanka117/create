@@ -9,14 +9,12 @@ export default function WorkSpace({ state, updateData }) {
 			fontSize: '1.5rem',
 			fontWeight: 'bold',
 			marginTop: '10px',
-			position: 'relative',
 			right: '20px',
 		},
 		message: {
 			fontSize: '0.8rem',
 			fontWeight: '600',
 			color: '#a3a3a3',
-			position: 'relative',
 			right: '20px',
 		},
 	}
@@ -45,7 +43,6 @@ export default function WorkSpace({ state, updateData }) {
 				style={{
 					display: 'flex',
 					flexDirection: 'column',
-					alignItems: 'center',
 					marginTop: '30px',
 					gap: '15px',
 				}}
@@ -53,7 +50,7 @@ export default function WorkSpace({ state, updateData }) {
 				<Typography
 					variant='h5'
 					style={{
-						marginRight: '300px',
+						textAlign: 'left',
 						fontSize: '0.8rem',
 						fontWeight: '600',
 						color: '#a3a3a3',
@@ -72,12 +69,13 @@ export default function WorkSpace({ state, updateData }) {
 					}
 					value={state.workspaceName}
 					onChange={handleNameChange}
-					style={{ position: 'relative', right: '29px' }}
+					// style={{ position: 'relative', right: '29px' }}
 				/>
 				<Typography
 					variant='h5'
 					style={{
-						marginLeft: '-250px',
+						// marginLeft: '-250px',
+						textAlign: 'left',
 						fontSize: '0.8rem',
 						fontWeight: '600',
 						color: '#a3a3a3',
@@ -88,7 +86,7 @@ export default function WorkSpace({ state, updateData }) {
 				<TextField
 					defaultValue='Example'
 					id='outlined-start-adornment'
-					sx={{ m: 1, width: '25ch' }}
+					// sx={{ m: 1, width: '25ch' }}
 					variant='outlined'
 					value={state.workspaceURL}
 					onChange={handleWorksapceNameChange}
